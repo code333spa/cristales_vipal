@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristales Vipal</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon"> 
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- Logo de la empresa en una ubicación fija -->
@@ -18,50 +19,81 @@
         <h1>Cristales Vipal</h1>
     </header>
 
-    <div class="container">
-        <p>Diseñamos tus ideas</p>
-        
-        <!-- Botón de WhatsApp -->
-        <div class="whatsapp-btn">
-            <a href="https://wa.me/+56991703532" target="_blank">
-                <img src="img/wsp-logo.png" alt="WhatsApp" class="wsp-logo">
-                Pide tu presupuesto
-            </a>
-        </div>
-        
-        <!-- Información de contacto -->
-        <div class="info">
-            <p>Visítanos en nuestra casa matriz<br>Aviadores #1196, El Bosque</p>
-            <p>¡Vamos a todo Chile!</p>
-        </div>
-        
-        <!-- Servicios -->
-        <div class="services">
-            <div class="service">
-                <img src="img/proyectos.jpg" alt="Proyectos">
-                <p>Proyectos</p>
+    <!-- Contenedor principal -->
+    <div class="main-content">
+        <div class="container">
+            <p>Diseñamos tus ideas</p>
+            
+            <!-- Botón de WhatsApp -->
+            <div class="whatsapp-btn">
+                <a href="https://wa.me/+56991703532" target="_blank">
+                    <img src="img/wsp-logo.png" alt="WhatsApp" class="wsp-logo">
+                    Pide tu presupuesto
+                </a>
             </div>
-            <div class="service">
-                <img src="img/disenos.jpg" alt="Diseños">
-                <p>Diseños</p>
+            
+            <!-- Información de contacto -->
+            <div class="info">
+                <p>Visítanos en nuestra casa matriz<br>Aviadores #1196, El Bosque</p>
+                <p>¡Vamos a todo Chile!</p>
             </div>
-            <div class="service">
-                <img src="img/cubiertas.jpg" alt="Cubiertas">
-                <p>Cubiertas</p>
+            
+            <!-- Servicios -->
+            <div class="services">
+                <div class="service">
+                    <img src="img/proyectos.jpg" alt="Proyectos">
+                    <p>Proyectos</p>
+                </div>
+                <div class="service">
+                    <img src="img/disenos.jpg" alt="Diseños">
+                    <p>Diseños</p>
+                </div>
+                <div class="service">
+                    <img src="img/cubiertas.jpg" alt="Cubiertas">
+                    <p>Cubiertas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón Ver Sede -->
+        <div class="ver-sede-btn">
+            <button onclick="mostrarSede()">Ver Sede</button>
+        </div>
+
+        <!-- Imagen de la Sede (oculta inicialmente) -->
+        <div class="sede-imagen" id="sedeImagen" style="display: none;">
+            <img src="img/sede.jpg" alt="Sede">
+            <p>Sede</p>
+        </div>
+
+        <!-- Lista de servicios en movimiento -->
+        <div class="scrolling-services">
+            <div class="scrolling-text">
+                <span>
+                    Pizarras de cristal, Cubiertas, Diarios murales, Ventanas de aluminio, Cortes exprés, Ventanas exprés, Espejos, Pulido, Servicio de biselado, Shower door, Ángulos de aluminio, Quincallería, Cristales templados.
+                    &nbsp; | &nbsp;
+                    Pizarras de cristal, Cubiertas, Diarios murales, Ventanas de aluminio, Cortes exprés, Ventanas exprés, Espejos, Pulido, Servicio de biselado, Shower door, Ángulos de aluminio, Quincallería, Cristales templados.
+                </span>
             </div>
         </div>
     </div>
 
-    <!-- Botón Ver Sede -->
-    <div class="ver-sede-btn">
-        <button onclick="mostrarSede()">Ver Sede</button>
-    </div>
-
-    <!-- Imagen de la Sede (oculta inicialmente) -->
-    <div class="sede-imagen" id="sedeImagen" style="display: none;">
-        <img src="img/sede.jpg" alt="Sede">
-        <p>Sede</p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Casa Matriz: Aviadores #1196, El Bosque</p>
+            <p>Teléfono: <a href="tel:+56991703532">+56 9 9170 3532</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/share/12BBkzJsXZK/" target="_blank" class="social-icon facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/cristalesvipal/profilecard/?igsh=MTZvcjNlNzQxMWJhdg==" target="_blank" class="social-icon instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+            <p>@Todos los derechos reservados, 2024. Code333</p>
+        </div>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
