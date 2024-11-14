@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Estilo general del cuerpo */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('img/fondo.jpg');
@@ -16,8 +17,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-top: 20px;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 /* Logo fijo en la esquina superior izquierda */
@@ -35,6 +44,7 @@ body {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
 }
 
+/* Encabezado */
 header {
     margin-bottom: 20px;
     padding-top: 40px;
@@ -47,6 +57,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Contenedor */
 .container {
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -132,9 +143,10 @@ header h1 {
     margin-top: 10px;
 }
 
-/* Estilo para el botón Ver Sede */
+/* Botón Ver Sede */
 .ver-sede-btn {
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .ver-sede-btn button {
@@ -153,17 +165,17 @@ header h1 {
     background-color: #e59400;
 }
 
-/* Estilo para la imagen de la sede */
+/* Imagen de la sede */
 .sede-imagen {
-    background: rgba(0, 0, 0, 0.7); /* Mismo color de fondo que .container */
+    background: rgba(0, 0, 0, 0.7);
     padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 30px; /* Espacio extra debajo de la imagen de la sede */
+    margin-bottom: 30px;
     width: 90%;
     max-width: 800px;
     transition: transform 0.3s ease, background 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra igual a .container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .sede-imagen img {
@@ -181,6 +193,75 @@ header h1 {
     margin-top: 10px;
 }
 
+/* Footer */
+.footer {
+    background: #002A61;
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+.footer-content a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    color: #FFA500;
+}
+
+/* Estilo para los íconos de redes sociales en el footer */
+.social-media a {
+    font-size: 2em; /* Tamaño más grande para los íconos */
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: #FFA500; /* Color en hover para mejorar la interacción */
+}
+
+/* Contenedor de servicios en movimiento */
+.scrolling-services {
+    background: rgba(255, 165, 0, 0.2);
+    padding: 10px 0;
+    margin-top: -20px; /* Ajuste para mover la lista hacia arriba */
+    margin-bottom: 20px; /* Espacio adicional debajo de la lista para separarla del footer */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll 30s linear infinite;
+    white-space: nowrap;
+}
+
+.scrolling-text span {
+    color: #FFFFFF;
+    font-size: 2.0em;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 /* Media queries para ajustes responsivos */
 @media (max-width: 768px) {
     header h1 {
@@ -193,7 +274,7 @@ header h1 {
         font-size: 1em;
     }
 
-    /*logo en pantallas pequeñas */
+    /* Ajuste para el logo en pantallas pequeñas */
     .logo {
         top: 10px;
         left: 10px;
@@ -202,5 +283,26 @@ header h1 {
 
     header {
         padding-top: 80px;
+    }
+
+    /* Ajustes para el footer en dispositivos móviles */
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .footer-content p {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+    .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .social-media a {
+        font-size: 1.5em;
     }
 }
