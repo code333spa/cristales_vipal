@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristales Vipal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon"> 
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <!-- Logo de la empresa en una ubicación fija -->
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo de Cristales Vipal">
+    </div>
+
+    <!-- Título separado del cuadro principal -->
+    <header>
+        <h1>Cristales Vipal</h1>
+    </header>
+
+    <div class="container">
+        <p>Diseñamos tus ideas</p>
+        
+        <!-- Botón de WhatsApp -->
+        <div class="whatsapp-btn">
+            <a href="https://wa.me/XXXXXX" target="_blank">
+                <img src="img/wsp-logo.png" alt="WhatsApp" class="wsp-logo">
+                Pide tu presupuesto
+            </a>
+        </div>
+        
+        <!-- Información de contacto -->
+        <div class="info">
+            <p>Visítanos en nuestra casa matriz<br>Aviadores #1196, El Bosque</p>
+            <p>¡Vamos a todo Chile!</p>
+        </div>
+        
+        <!-- Servicios -->
+        <div class="services">
+            <div class="service">
+                <img src="img/proyectos.jpg" alt="Proyectos">
+                <p>Proyectos</p>
+            </div>
+            <div class="service">
+                <img src="img/disenos.jpg" alt="Diseños">
+                <p>Diseños</p>
+            </div>
+            <div class="service">
+                <img src="img/cubiertas.jpg" alt="Cubiertas">
+                <p>Cubiertas</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Ver Sede -->
+    <div class="ver-sede-btn">
+        <button onclick="mostrarSede()">Ver Sede</button>
+    </div>
+
+    <!-- Imagen de la Sede (oculta inicialmente) -->
+    <div class="sede-imagen" id="sedeImagen" style="display: none;">
+        <img src="img/sede.jpg" alt="Sede">
+        <p>Sede</p>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
