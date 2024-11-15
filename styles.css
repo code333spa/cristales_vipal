@@ -48,10 +48,20 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
     color: #002A61;
     margin-bottom: 10px;
+}
+
+/* Estilo para el subtítulo debajo del título principal */
+.subtitulo {
+    color: #FFA500; /* Color amarillo */
+    font-size: 1.7em; /* Ajusta el tamaño del texto según lo necesario */
+    margin-top: -10px; /* Espacio entre el título y el subtítulo */
+    font-weight: bold;
+    font-style: italic; /* Texto en cursiva */
+    margin-left: 333px; /* Desplaza el subtítulo hacia la derecha */
 }
 
 /* Contenedor */
@@ -190,6 +200,7 @@ header h1 {
     margin-top: 10px;
 }
 
+
 /* Footer */
 .footer {
     background: #002A61;
@@ -219,8 +230,14 @@ header h1 {
 
 /* Estilo para los íconos de redes sociales en el footer */
 .social-media a {
-    font-size: 2em;
+    font-size: 2em; /* Tamaño uniforme para todos los íconos */
     margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-media a i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
 
 .social-media a:hover {
@@ -274,7 +291,14 @@ header h1 {
     /* Ajuste para el logo en pantallas pequeñas */
     .logo {
         margin-top: 10px;
-        width: 50px;
+        width: 150px;
+    }
+
+    /* Ajuste responsivo para el subtítulo */
+    .subtitulo {
+        font-size: 1.2em; /* Tamaño de fuente reducido en pantallas pequeñas */
+        margin-left: 10px; /* Menor desplazamiento hacia la derecha */
+        margin-top: -5px; /* Ajuste de espacio superior */
     }
 
     header {
