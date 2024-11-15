@@ -29,13 +29,10 @@ body {
     width: 100%;
 }
 
-/* Logo fijo en la esquina superior izquierda */
+/* Logo estático en la parte superior */
 .logo {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    margin-top: 20px;
     width: 100px;
-    z-index: 10;
 }
 
 .logo img {
@@ -47,7 +44,7 @@ body {
 /* Encabezado */
 header {
     margin-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 header h1 {
@@ -222,20 +219,20 @@ header h1 {
 
 /* Estilo para los íconos de redes sociales en el footer */
 .social-media a {
-    font-size: 2em; /* Tamaño más grande para los íconos */
+    font-size: 2em;
     margin: 0 10px;
 }
 
 .social-media a:hover {
-    color: #FFA500; /* Color en hover para mejorar la interacción */
+    color: #FFA500;
 }
 
 /* Contenedor de servicios en movimiento */
 .scrolling-services {
     background: rgba(255, 165, 0, 0.2);
     padding: 10px 0;
-    margin-top: -20px; /* Ajuste para mover la lista hacia arriba */
-    margin-bottom: 20px; /* Espacio adicional debajo de la lista para separarla del footer */
+    margin-top: -20px;
+    margin-bottom: 20px;
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
@@ -243,7 +240,7 @@ header h1 {
 
 .scrolling-text {
     display: inline-block;
-    animation: scroll 30s linear infinite;
+    animation: scroll 80s linear infinite; 
     white-space: nowrap;
 }
 
@@ -276,8 +273,7 @@ header h1 {
 
     /* Ajuste para el logo en pantallas pequeñas */
     .logo {
-        top: 10px;
-        left: 10px;
+        margin-top: 10px;
         width: 50px;
     }
 
