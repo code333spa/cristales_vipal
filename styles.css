@@ -240,7 +240,7 @@ header h1 {
 
 .scrolling-text {
     display: inline-block;
-    animation: scroll 80s linear infinite; 
+    animation: scroll 85s linear infinite; 
     white-space: nowrap;
 }
 
