@@ -270,6 +270,37 @@ header h1 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+
+/* COLOR ARCOIRIS TEXTO PROMOCIONAL */
+
+.rgb-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: rgbAnimation 3s infinite;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animación RGB */
+@keyframes rgbAnimation {
+    0% {
+        color: rgb(255, 0, 0); /* Rojo */
+    }
+    25% {
+        color: rgb(0, 255, 0); /* Verde */
+    }
+    50% {
+        color: rgb(0, 0, 255); /* Azul */
+    }
+    75% {
+        color: rgb(255, 255, 0); /* Amarillo */
+    }
+    100% {
+        color: rgb(255, 0, 255); /* Magenta */
+    }
+}
+
+
 /* Animación de desplazamiento continuo */
 @keyframes scroll {
     0% { transform: translateX(0); }
