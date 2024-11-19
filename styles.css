@@ -307,6 +307,26 @@ header h1 {
     100% { transform: translateX(-100%); }
 }
 
+
+/* Imagen de medios de pago */
+.payment-image {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacios en línea adicionales */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    border-radius: 10px; /* Opcional: añade bordes redondeados para consistencia */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Opcional: agrega sombra para realce */
+}
+
+/* Ajuste específico para pantallas pequeñas */
+@media (max-width: 768px) {
+    .payment-image {
+        max-width: 90%; /* Reduce el tamaño adicionalmente en pantallas más pequeñas */
+        margin: 10px auto; /* Agrega espacio alrededor */
+    }
+}
+
+
 /* Media queries para ajustes responsivos */
 @media (max-width: 768px) {
     header h1 {
